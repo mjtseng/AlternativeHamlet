@@ -8,17 +8,36 @@
 	<meta name="description" content="Hamlet Game">
 	<meta name="keywords" content="HTML,CSS">
 	<meta name="author" content="Jessica Liao and Maggie Tseng">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
 	<h1>Sailed South</h1>
 	<p> 
-		You have successfully sailed south! However......
-
+		You are sailing south!
+	</p>
+<!--
 	<br>
 		<a href = "">Continue on </a>
 	</br>
+-->
 
-	</p>
+	<a id="no_pirates" style="display:none" href="HamletHappyEnding.html">Continue sailing south</a>
+	<p id ="announce_pirates" style="display:none"> You see a pirate ship approaching your ship.</p>
+	<a id="pirates" style="display:none" href="HamletPiratesPage.html">Continue sailing south</a>
+
+	<!-- randomize which page to get using javascript -->
+	<script>
+		var outcome_num;
+		outcome_num = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+		if (outcome_num % 2 == 0){
+			document.getElementById("no_pirates").style.display = "block"; 
+		}
+		else{
+			document.getElementById("announce_pirates").style.display = "block";
+			document.getElementById("pirates").style.display = "block";
+		}
+
+	</script>
 </body>
 </html>
