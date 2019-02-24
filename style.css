@@ -1,5 +1,14 @@
-/* CSS for Alternative Hamlet */
+/* CSS for Alternative Hamlet pages */
 
 body{
+	color: white;
 	background: black;
+}
+
+a{
+	color:#307cf4;
+}
+
+a:hover{
+	color:#68ccff;
 }
