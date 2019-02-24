@@ -20,13 +20,32 @@
 	<p> 
 		You try sailing out of Denmark. Pick a direction to sail:
 
-
 	<br>
-		<a href = "">Sail South</a>
+<!-- in case javascript breaks:
+
+	<a href = "">Sail South</a>
 	</br>
 	<br>
 		<a href = "">Sail North</a>
 	</br>
+-->
+
+	<a id="north" style="display:none" href="HamletNorth.html">Sail north</a>
+	<a id="south" style="display:none" href="HamletSouth.html">Sail south</a>
+
+	<!-- randomize which page to get using javascript -->
+	<script>
+		var outcome_num;
+		outcome_num = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+		alert (outcome_num);
+		if (outcome_num % 2 == 0){
+			document.getElementById("north").style.display = "block"; 
+		}
+		else{
+			document.getElementById("south").style.display = "block";
+		}
+
+	</script>
 
 	</p>
 </body>
