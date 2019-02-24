@@ -13,12 +13,30 @@
 <body>
 	<h1>Sailed North</h1>
 	<p> 
-		You have successfully sailed north! However......
-
+		You are sailing north!
+<!--
 	<br>
 		<a href = "">Continue on </a>
 	</br>
-
 	</p>
+-->
+	<a id="no_storm" style="display:none" href="HamletHappyEnding.html">Continue north</a>
+	<p id ="announce_storm" style="display:none"> There's a large storm on the horizon though...</p>
+	<a id="storm" style="display:none" href="HamletStorm.html">Try to make it through the storm</a>
+
+	<!-- randomize which page to get using javascript -->
+	<script>
+		var outcome_num;
+		outcome_num = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+		if (outcome_num % 2 == 0){
+			document.getElementById("no_storm").style.display = "block"; 
+		}
+		else{
+			document.getElementById("announce_storm").style.display = "block";
+			document.getElementById("storm").style.display = "block";
+		}
+
+	</script>
+
 </body>
 </html>
