@@ -37,11 +37,12 @@
 	<a id="miracle" style="display:none" href="HamletKingMiracle.html">Shove him off the balcony when no one else is around</a>
 	<a id="falldeath" style="display:none" href="HamletKingFallDeath.html">Shove him off the balcony when no one else is around</a>
 
-	<!-- randomize which page to get using javascript -->
+	<!-- randomize which page to get using javascript; 20% chance of miracle -->
+	<!-- number generation: Math.floor(Math.random() * (max - min + 1)) + min; -->
 	<script>
 		var outcome_num;
-		outcome_num = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
-		if (outcome_num % 2 == 0){
+		outcome_num = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+		if (outcome_num % 5 == 0){
 			document.getElementById("miracle").style.display = "block"; 
 		}
 		else{
