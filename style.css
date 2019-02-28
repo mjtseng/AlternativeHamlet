@@ -4,6 +4,9 @@ body{
 	color: white;
 	background: black;
 	font-family: Georgia, serif;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 2%;
 }
 
 a{
@@ -20,6 +23,7 @@ a:hover{
 
 h1{
 	font-size:36px;
+	/* margin-left: 2%; */
 }
 
 p{
