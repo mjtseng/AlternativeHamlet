@@ -13,6 +13,11 @@ if (outcome_num % 20 == 0){
 
 	<script type='text/javascript' language='javascript' src='random_madness.js'/>
 	
-	<a id="insane" style="display:none" href="HamletInsanity.html">You start to feel a little weird...</a>
+	<p>
+		Before you can decide, you start to feel a little weird. It must be all of the emotions from the crazy situation you're stuck in...
+	</p>
+	<a id="insane" style="display:none" href="HamletInsanity.html">What's happening?</a>
 
 */
+
+// how to have other options disappear?
